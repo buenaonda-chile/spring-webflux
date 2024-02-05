@@ -34,6 +34,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
 		freeCompilerArgs += "-Xjsr305=strict"
+		freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
 		jvmTarget = "17"
 	}
 }
